@@ -1,0 +1,47 @@
+﻿<Window x:Class="Library.Billing_Page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="Billing Page" Height="550" Width="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Bank" Margin="248,23,284.2,10.4" FontSize="36" FontWeight="Bold"/>
+
+        <Label Grid.Row="1" Content="Cart Number :" Margin="10,21.6,546.2,11.6"/>
+        <TextBox Grid.Row="1" Margin="110,21.6,220.2,11.6"/>
+        <Label Grid.Row="1" Margin="428,26.6,10.2,11.6"/>
+
+        <Label Grid.Row="2" Content="Password :" Margin="26,21.4,546.2,12"/>
+        <TextBox Grid.Row="2" Margin="110,21.4,368.2,12"/>
+        <Label Grid.Row="2" Margin="428,26.6,10.2,11.6"/>
+
+        <Label Grid.Row="3" Content="CVV2 :" Margin="51,22,546.2,11.4"/>
+        <TextBox Grid.Row="3" Margin="110,23,456.2,10.4"/>
+        <Label Grid.Row="3" Margin="428,26.6,10.2,11.6"/>
+
+        <Label Grid.Row="4" Content="Expiartion date :" Margin="10,21.6,533.2,11.8"/>
+        <Label Grid.Row="4" Content="Month" Margin="134,21.6,456.2,11.8"/>
+        <TextBox Grid.Row="4" Margin="190,21.6,408.2,11.8"/>
+        <Label Grid.Row="4" Content="Year" Margin="276,21.6,325.2,11.8"/>
+        <TextBox Grid.Row="4" Margin="323,21.6,275.2,11.8"/>
+
+        <Label Grid.Row="5" Content="E_mail :" Margin="26,12.2,566.2,41.4"/>
+        <TextBox Grid.Row="5" Margin="119,12.2,275.2,41.4"/>
+        <Label Grid.Row="5" Margin="119,47.2,275.2,10.4"/>
+
+        <Button x:Name="btn_bank_pay" Grid.Row="6" Content="Pay ?$" Margin="110,20.6,325.2,23.8" Click="btn_bank_pay_Click"/>
+        <Button x:Name="btn_bank_cancel" Grid.Row="6" Content="Cancel" Margin="358,30.6,162.2,23.8" Click="btn_bank_cancel_Click"/>
+    </Grid>
+</Window>

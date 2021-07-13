@@ -1,0 +1,59 @@
+﻿<Window x:Class="Library.UsersInfoPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="User information" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Image Grid.Row="0" Margin="117,10,116.8,9.6"/>
+            <Button Grid.Row="0" Content="Back" Margin="10,10,316.8,114.6" Click="Button_Click"/>
+
+            <Label Grid.Row="1" Content="Name :" Margin="61,10.4,100.8,10.4"/>
+            <Label Grid.Row="2" Content="E_mail :" Margin="61,10.4,100.8,10.4"/>
+            <Label Grid.Row="3" Content="Phon number :" Margin="61,10.4,100.8,10.4"/>
+            <Label Grid.Row="4" Content="Register date :" Margin="61,10.4,100.8,10.4"/>
+            <Label Grid.Row="5" Content="days remaining :" Margin="61,10.4,100.8,10.4"/>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3.5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <ScrollViewer Grid.Row="0" Margin="20,29,21.8,22.2">
+                <ItemsControl>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+
+            <Label Grid.Row="1" Content="Password" Margin="36,21.8,280.8,25"/>
+            <TextBox Grid.Row="1" Margin="121,21.8,65.8,25"/>
+            <Label Grid.Row="1" Margin="121,56.8,70.8,0"/>
+
+            <Button Grid.Row="2" Content="Delete user" Margin="88,0,119.8,30" FontSize="18" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</Window>

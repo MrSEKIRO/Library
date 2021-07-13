@@ -1,0 +1,36 @@
+﻿<Window x:Class="Library.AddBookPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library"
+        mc:Ignorable="d"
+        Title="AddBookPage" Height="500" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Enter info of Book" Margin="70,66,69.2,36" FontSize="36"/>
+
+        <Label Content="Name :" Margin="70,16.6,315.2,13.6" Grid.Row="1" />
+        <TextBox Grid.Row="1" Margin="133,16.6,95.2,13.6" />
+
+        <Label Grid.Row="2" Content="Athure :" Margin="70,16.6,315.2,13.6" />
+        <TextBox Grid.Row="2" Margin="133,16.6,95.2,13.6"/>
+
+        <Label Grid.Row="3" Content="Genre :" Margin="70,16.6,315.2,13.6"/>
+        <ComboBox Grid.Row="3" Margin="133,16.6,95.2,13.6"/>
+
+        <Label Grid.Row="4" Content="ISBN :" Margin="70,16.6,315.2,13.6"/>
+        <TextBox Grid.Row="4" Margin="133,16.6,95.2,13.6"/>
+
+        <Button Grid.Row="5" Content="Add Book" Margin="70,19.8,226.2,14.4"/>
+        <Button Grid.Row="5" Content="Cancel and go back" Margin="222,19.8,69.2,14.4"/>
+    </Grid>
+</Window>
