@@ -1,0 +1,2 @@
+# Library
+WPF application library
