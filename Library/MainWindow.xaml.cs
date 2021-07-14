@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Library.Classes;
 
 
 namespace Library
@@ -21,7 +22,7 @@ namespace Library
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+        Person person = new Person();
         public MainWindow()
         {
             InitializeComponent();
@@ -42,6 +43,7 @@ namespace Library
 		private void btn_welcom_user_Click(object sender, RoutedEventArgs e)
 		{
             //** set person type to user
+            person.person_type=Person_Type.User;
 
             TabControl_welcom.SelectedItem = Tab_Login;
             btn_signin.Visibility = Visibility.Visible;
@@ -50,6 +52,7 @@ namespace Library
 		private void btn_welcom_manager_Click(object sender, RoutedEventArgs e)
 		{
             //** set person type to manager
+            person.person_type = Person_Type.Manager;
 
             TabControl_welcom.SelectedItem = Tab_Login;
             btn_signin.Visibility = Visibility.Hidden;
@@ -58,6 +61,7 @@ namespace Library
 		private void btn_welcom_employee_Click(object sender, RoutedEventArgs e)
 		{
             //** set person type to employee
+            person.person_type = Person_Type.Employee;
 
             TabControl_welcom.SelectedItem = Tab_Login;
             btn_signin.Visibility = Visibility.Hidden;

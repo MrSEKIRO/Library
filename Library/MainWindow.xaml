@@ -24,7 +24,7 @@
                     </Grid.RowDefinitions>
 
                     <Button x:Name="btn_welcom_exit" Grid.Row="0" Content="Exit" Margin="471,0,0.4,86.4" Grid.Column="1" Click="btn_welcom_exit_Click"/>
-                    <Label Grid.Row="1" Content="Welcom" Margin="141,19.6,170.4,15" FontWeight="Bold" FontSize="48" Grid.Column="1"/>
+                    <Label Grid.Row="1" Content="Welcom to my library" HorizontalContentAlignment="Center" Margin="10,19.6,10.4,15" FontWeight="Bold" FontSize="48" Grid.ColumnSpan="2"/>
                     <Label Grid.Row="2" Content="Choose your part:" Margin="119,37,135.4,19.6" FontSize="30" Grid.Column="1"/>
 
                     <Button Grid.Row="3" Content="User" Margin="119,54.4,140.4,6.2" Grid.Column="1"/>

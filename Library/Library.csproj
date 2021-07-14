@@ -61,6 +61,8 @@
     <Compile Include="Billing_Page.xaml.cs">
       <DependentUpon>Billing_Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Book.cs" />
+    <Compile Include="Classes\Person.cs" />
     <Compile Include="Employee_Page.xaml.cs">
       <DependentUpon>Employee_Page.xaml</DependentUpon>
     </Compile>
@@ -143,5 +145,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
