@@ -63,7 +63,9 @@ namespace Library
 			if (op.ShowDialog() == true)  
 			{  
 				imgPhoto.Source = new BitmapImage(new Uri(op.FileName));  
-			}  
+			}
+
+			//var image = new ImageSourceConverter().ConvertTo(imgPhoto.Source, typeof(Byte[]));
 		}
 
 		private void btn_signPage_back_Click(object sender, RoutedEventArgs e)
