@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Library.Classes;
 
 namespace Library
 {
@@ -19,9 +20,13 @@ namespace Library
 	/// </summary>
 	public partial class User_Page : Window
 	{
-		public User_Page()
+		private int user_id;
+		private bool isChkbx_Checked;
+		public User_Page(int id,bool isChkbx_Checked)
 		{
 			InitializeComponent();
+			user_id = id;
+			this.isChkbx_Checked = isChkbx_Checked;
 		}
 
 		private void btn_user_allbooks_Click(object sender, RoutedEventArgs e)
@@ -52,9 +57,24 @@ namespace Library
 
 		private void btn_user_exit_Click(object sender, RoutedEventArgs e)
 		{
-			MainWindow mainWindow = new MainWindow();
-			mainWindow.Show();
-			this.Close();
+			MessageBoxResult result = MessageBox.Show("Are you sure to exit?", "Exit", MessageBoxButton.YesNo);
+
+			if(result == MessageBoxResult.Yes)
+			{
+				if(isChkbx_Checked == true)
+				{
+					//** make a minewindow  (Person_type.User,id)
+					MainWindow mainWindow = new MainWindow(Person_Type.User, user_id);
+					mainWindow.Show();
+					this.Close();
+				}
+				else
+				{
+					MainWindow mainWindow = new MainWindow();
+					mainWindow.Show();
+					this.Close();
+				}
+			}
 		}
 	}
 }

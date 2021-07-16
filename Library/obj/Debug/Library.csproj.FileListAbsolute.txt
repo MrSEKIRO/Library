@@ -27,3 +27,6 @@ C:\Arshia\Library\Library\obj\Debug\Library.csproj.GenerateResource.cache
 C:\Arshia\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
 C:\Arshia\Library\Library\obj\Debug\Library.exe
 C:\Arshia\Library\Library\obj\Debug\Library.pdb
+C:\Arshia\Library\Library\bin\Debug\DbLibrary.mdf
+C:\Arshia\Library\Library\bin\Debug\DbLibrary_log.ldf
+C:\Arshia\Library\Library\obj\Debug\Library_Content.g.cs

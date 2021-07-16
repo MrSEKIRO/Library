@@ -27,10 +27,10 @@
                     <Label Grid.Row="1" Content="Welcom to my library" HorizontalContentAlignment="Center" Margin="10,19.6,10.4,15" FontWeight="Bold" FontSize="48" Grid.ColumnSpan="2"/>
                     <Label Grid.Row="2" Content="Choose your part:" Margin="119,37,135.4,19.6" FontSize="30" Grid.Column="1"/>
 
-                    <Button Grid.Row="3" Content="User" Margin="119,54.4,140.4,6.2" Grid.Column="1"/>
+                    <Button x:Name="btn_welcom_user" Grid.Row="3" Content="User" Margin="119,54.4,140.4,6.2" Grid.Column="1" Click="btn_welcom_user_Click"/>
 
-                    <Button Grid.Row="4" Content="Manager" Margin="119,5.8,266.4,67.8" Grid.Column="1"/>
-                    <Button Grid.Row="4" Content="Employee" Margin="250,5.8,140.4,67.8" Grid.Column="1"/>
+                    <Button x:Name="btn_welcom_manager" Grid.Row="4" Content="Manager" Margin="118.6,0,266.4,67.8" Grid.Column="1" Click="btn_welcom_manager_Click" Height="36" VerticalAlignment="Bottom"/>
+                    <Button x:Name="btn_welcom_Employee" Grid.Row="4" Content="Employee" Margin="250,5.8,140.4,67.8" Grid.Column="1" Click="btn_welcom_employee_Click"/>
 
                     <Label Grid.Row="5" Content="Created by Niam and Abolfazl" Margin="0,84.2,347.4,0.4" Grid.ColumnSpan="2"/>
                     <Button Grid.Row="5" Content="About us" Margin="448,85.2,0.4,0.4" Background="{x:Null}" BorderBrush="{x:Null}" Grid.Column="1"/>
@@ -47,18 +47,18 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                    <Button Grid.Row="0" Content="Back" Margin="10,10,469.4,57.6"/>
+                    <Button x:Name="btn_welcom_back" Grid.Row="0" Content="Back" Margin="10,10,469.4,57.6" Click="btn_welcom_back_Click"/>
                     <Button x:Name="btn_signin" Grid.Row="0" Content="Sign in" Margin="417,10,10.4,41.4" Background="#FFC2EAA5" FontSize="24" FontWeight="Bold" BorderBrush="#FF0C0707" Click="btn_signin_Click"/>
                     <Label Grid.Row="1" Content="Login" Margin="184,51.2,171.4,57.2" FontSize="55" FontWeight="Bold" FontFamily="Showcard Gothic"/>
                     <Label Grid.Row="2" Content="Username:" Margin="147,20.6,317.4,47.8"/>
-                    <TextBox Grid.Row="2" Text="" Margin="150,46.8,161.4,27.8"/>
-                    <Label Grid.Row="2" Margin="150,76.8,161.4,6.8"/>
+                    <TextBox x:Name="txtbx_login_username" Grid.Row="2" BorderThickness="0,0,0,1.5" Margin="150,47.8,161.4,33.8" TextChanged="txtbx_login_username_TextChanged"/>
+                    <Label x:Name="lbl_login_user_error" Grid.Row="2" VerticalContentAlignment="Center" Margin="150,68.8,159.4,4.8" Foreground="Red" FontSize="10"/>
                     <Label Grid.Row="3" Content="Password" Margin="147,0,322.4,68.4"/>
-                    <PasswordBox Grid.Row="3" Margin="150,31.2,161.4,44.4" />
-                    <Label Grid.Row="3" Margin="150,62,161.4,16.4"/>
+                    <PasswordBox x:Name="txtbx_login_pass" Grid.Row="3" BorderThickness="0,0,0,1.5" Margin="150,33.2,161.4,48.4" PasswordChanged="txtbx_login_pass_PasswordChanged" />
+                    <Label x:Name="lbl_login_pass_error" Grid.Row="3" VerticalContentAlignment="Center" Margin="150,53.2,161.4,23.4" Foreground="Red" FontSize="10"/>
 
-                    <Button Grid.Row="3" Content="Login" Margin="184,101.2,209.4,9.8" Grid.RowSpan="2"/>
-                    <CheckBox Grid.Row="5" Content="Remeber me" Margin="160,5.2,281.4,75.4"/>
+                    <Button x:Name="btn_login_login" Grid.Row="3" Content="Login" Margin="184,101.2,209.4,9.8" Grid.RowSpan="2" Click="btn_login_Click"/>
+                    <CheckBox x:Name="chkbx_remeberme" Grid.Row="5" Content="Remeber me" Margin="160,5.2,281.4,75.4"/>
                     <Button Grid.Row="4" Content="Forget password?" Margin="262,48.6,161.4,76.4" Grid.RowSpan="2" Background="{x:Null}" BorderBrush="{x:Null}"/>
                 </Grid>
             </TabItem>

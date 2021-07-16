@@ -37,7 +37,7 @@ namespace Library
 
 			if(Is_user_siginin == true)
 			{
-				User_Page user = new User_Page();
+				User_Page user = new User_Page(1/*shoud chang*/,false);
 				user.Show();
 				this.Close();
 			}
